@@ -5,6 +5,11 @@
 
 work flow:
 
-    implement hotelMangemant.py in order to intialize the DB first
+    --implement hotelMangemant.py in order to intialize the DB first
     implement hotelWorker.py
     implement miniCroneRunner.py which uses hotelWorker
+
+
+
+
+##############################
