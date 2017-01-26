@@ -24,6 +24,7 @@ class hotelWorker(object):
 
         cursor = self.database.cursor()
 
+        # clean task
         if parameter == 0:
             cursor.execute("SELECT Rooms.RoomNumber "
                            "FROM Rooms "
@@ -35,6 +36,7 @@ class hotelWorker(object):
 
             print self.print_formats[task_name] % (stringed_rooms, str(time.time()))
 
+        # breakfast, wakeup tasks
         else:
             cursor.execute("SELECT * "
                            "FROM Residents "
